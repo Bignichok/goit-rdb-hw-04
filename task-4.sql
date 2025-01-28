@@ -1,7 +1,7 @@
 USE `db_hw-3`;
 
 -- 1. Визначте кількість рядків (COUNT)
-SELECT COUNT(*) AS total_rows
+SELECT COUNT(1) AS total_rows
 from orders
 inner join order_details on order_details.order_id = orders.id
 inner join shippers on shippers.id = orders.shipper_id
